@@ -1,5 +1,5 @@
-Les librairies utiles en C
-==========================
+Les librairies C toujours utiles !
+==================================
 
 Les fonctions de tri
 --------------------
