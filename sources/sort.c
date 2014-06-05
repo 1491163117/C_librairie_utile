@@ -8,7 +8,7 @@ merge_sort
 quicksort
 
 */
-//Get the size from a tab
+//SWAP two entries
 void swap_int_tab(int* tab, int i, int j)
 {
     int temp;
@@ -17,6 +17,8 @@ void swap_int_tab(int* tab, int i, int j)
     tab[j] = temp;
 }
 
+
+/* -_-_-_-_-_-_- Bubble_sort -_-_-_-_-_-_-*/
 void bubble_sort_int(int* tab, int taille_tab)
 {
 	int i;
@@ -36,13 +38,11 @@ void bubble_sort_int(int* tab, int taille_tab)
         taille--;
     }
 }
+/* -_-_-_-_-_-_- END Bubble_sort -_-_-_-_-_-_-*/
 
 
 
-
-/*        LE quicksort           */
-
-
+/* -_-_-_-_-_-_- quick_sort -_-_-_-_-_-_-*/
 void quick_sort( int* tab, int start, int end)
 {
    int j;
@@ -56,8 +56,6 @@ void quick_sort( int* tab, int start, int end)
    }
     
 }
-
-
 
 int partition( int* tab, int start, int end)
 {
@@ -79,6 +77,4 @@ int partition( int* tab, int start, int end)
    t = tab[start]; tab[start] = tab[j]; tab[j] = t;
    return j;
 }
-
-
-/*    FIN DU QUICKSORT */
+/* -_-_-_-_-_-_- END quick_sort -_-_-_-_-_-_-*/
