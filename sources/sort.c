@@ -36,3 +36,49 @@ void bubble_sort_int(int* tab, int taille_tab)
         taille--;
     }
 }
+
+
+
+
+/*        LE quicksort           */
+
+
+void quick_sort( int* tab, int start, int end)
+{
+   int j;
+
+   if( start < end ) 
+   {
+    // diviser pour mieux règner !
+        j = partition( tab, start, end);
+        quick_sort( tab, start, j-1);
+        quick_sort( tab, j+1, end);
+   }
+    
+}
+
+
+
+int partition( int* tab, int start, int end)
+{
+   int pivot, i, j, t;
+   pivot = tab[start];
+   i = start; j = end+1;
+        
+   while( 1)
+   {
+        do ++i;
+        while( tab[i] <= pivot && i <= end );
+
+        do --j; 
+        while( tab[j] > pivot );
+    
+        if( i >= j ) break;
+        t = tab[i]; tab[i] = tab[j]; tab[j] = t;
+   }
+   t = tab[start]; tab[start] = tab[j]; tab[j] = t;
+   return j;
+}
+
+
+/*    FIN DU QUICKSORT */

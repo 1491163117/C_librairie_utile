@@ -8,6 +8,7 @@ Les fonctions de tri
 - bubble_sort
 - heap_sort
 - merge_sort
+- insertion_sort
 
 Ces fonctions seront déclinées pour des tableaux à une dimension, pour tous les différents types
 

@@ -55,11 +55,11 @@ int main(int argc, char** argv)
 	array* my_array = malloc(sizeof(array));
 	new_random_array(my_array, taille);
 
+	//ici on execute les tests
+	//bubble_sort_int(my_array->value, my_array->length);
+	quick_sort(my_array->value, 0, my_array->length);
 	//lecture du tableau
 	read_array(my_array);
-
-	printf("\nTaille tableau : %i",size_tab_sorting(my_array->value));
-	
 	//On efface le tableau proprement
 	clean_array(my_array);
 	return 0;
