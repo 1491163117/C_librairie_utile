@@ -72,9 +72,9 @@ int partition( int* tab, int start, int end)
         while( tab[j] > pivot );
     
         if( i >= j ) break;
-        t = tab[i]; tab[i] = tab[j]; tab[j] = t;
+        swap_int_tab(tab, i, j);
    }
-   t = tab[start]; tab[start] = tab[j]; tab[j] = t;
+   swap_int_tab(tab,start,j);
    return j;
 }
 /* -_-_-_-_-_-_- END quick_sort -_-_-_-_-_-_-*/
